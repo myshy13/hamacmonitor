@@ -11,6 +11,10 @@ if [ -z "$1" ]; then
 fi
 
 VERSION=$1
+echo "Creating commit automatically"
+git add .
+git commit -m "Push release for version: $VERSION"
+
 
 # 2. Optional: Ensure you're on main before tagging
 echo "🔄 Checking out main branch and pulling latest changes..."
