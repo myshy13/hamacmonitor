@@ -1,4 +1,4 @@
-module go-monitor
+module hamacmonitor
 
 go 1.26
 
