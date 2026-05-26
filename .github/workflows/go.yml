@@ -22,8 +22,10 @@ jobs:
       with:
         go-version: '1.26'
 
-    - name: Build executable binary
-      run: go build -o hamacmonitor
+    - name: Build executable binary for Linux (ELF)
+      run: go build -o hamacmonitor-linux
+    - name: Build executable binary for Macos
+      run: GOOS=darwin GOARCH=arm64 go build -o hamacmonitor-mac
 
     - name: Create Release and Upload Asset
       # This step ONLY runs if the push was a git tag
