@@ -1,6 +1,6 @@
 module go-monitor
 
-go 1.26.3
+go 1.26
 
 require github.com/fatih/color v1.19.0
 
