@@ -13,7 +13,7 @@ fi
 VERSION=$1
 echo "Creating commit automatically"
 git add .
-git commit -m "Push release for version: $VERSION"
+git commit --allow-empty -m "Push release for version: $VERSION"
 
 
 # 2. Optional: Ensure you're on main before tagging
