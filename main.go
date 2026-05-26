@@ -165,7 +165,7 @@ func logStats(currentPage int) {
 
 	fmt.Println("╭─────────┬──────────────────────────────────────────────────────────────────── " + primary("Battery: "+padWidth(fmt.Sprint(batNum)+"%", 4)) + " ╮")
 	fmt.Println("│ "+calcBg(calcPrefix(0)+" Stats")+" │", padWidth("", 74), "│"+batRows[0]+"│")
-	fmt.Println("│ "+calcBg(calcPrefix(1)+" Net")+"   │  OS HamacMonitor v0.3.3 (fixed)  ", padWidth("", 42), "│"+batRows[1]+"│")
+	fmt.Println("│ "+calcBg(calcPrefix(1)+" Net")+"   │  OS HamacMonitor v0.3.4          ", padWidth("", 40), "│"+batRows[1]+"│")
 	fmt.Printf("│         │  OS: %-59s"+"           │"+batRows[2]+"│"+"\n", runtime.GOOS+"           ")
 
 	fmt.Printf("│         │  Timestamp: %-62s "+"│"+batRows[3]+"│"+"\n", time.Now().Format("15:04:05"))
